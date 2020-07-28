@@ -11,9 +11,9 @@ const UserModel = require("../models/UserModel");
  */
 
 describe("Auth", () => {
-  
+
 	// Before each test we empty the database
-	before((done) => { 
+	before((done) => {
 		UserModel.deleteMany({}, (err) => { 
 			done();           
 		});        
